@@ -57,6 +57,7 @@ body{
 .container-articles{
   max-width: 36rem;
   margin: 0 auto;
+  margin-top: 3rem;
 }
 
 .articles{

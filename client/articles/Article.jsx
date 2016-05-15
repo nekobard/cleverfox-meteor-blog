@@ -5,7 +5,7 @@ export default class Article extends React.Component{
     return (
       <li>
         <h4>{this.props.title}</h4>
-        <span>Posted 15.05.2016</span>
+        <span>Posted {this.props.createdAt}</span>
         <p>{this.props.description}</p>
         <button>READ MORE</button>
       </li>
