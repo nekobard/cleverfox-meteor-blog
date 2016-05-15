@@ -7,11 +7,7 @@ Articles = new Mongo.Collection('articles');
 export default class ArticlesWrapper extends TrackerReact(React.Component){
 
   getArticles(){
-    /*return [
-      { _id: 'dwqwdqw', title: 'First', description: 'Super article'},
-      { _id: 'vbfbb', title: 'Second', description: 'Another super article'}
-    ];*/
-    return Articles.find().fetch();
+    return Articles.find().fetch().reverse();
   }
 
   renderArticles() {
